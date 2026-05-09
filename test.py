@@ -1,7 +1,6 @@
 from PIL import Image, ImageDraw
 
 def generate_image_matrix(number_str, output_filename="cascade_matrix.png"):
-    # Отфильтруем только цифры из ввода
     digits = [int(char) for char in str(number_str) if char.isdigit()]
     
     if not digits:
